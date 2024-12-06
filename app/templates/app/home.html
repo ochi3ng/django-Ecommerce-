@@ -31,5 +31,22 @@
   </div>
 {% endblock information %}
 {% block main-content %}
-<h1>Welcome to our Ecommerce site......</h1>
+<div class="container">
+    <h2 class="text-center">Yoghurt products</h2>
+    <br/><br/>
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInup" data-wow-duration="1s"
+      data-wow-delay="o.6s" style="animation-duration: 1s; animation-delay: 0.6s;
+      animation-name: none;">
+      <a href="#">
+         <div class="goodnessec text-center">
+        <img src="{% static 'app/images/products/greek.jpeg '%}"
+        class="img-responsive" alt="">
+        <p class="mlkpro">GREEK</p>
+       </div>
+      </a>
+      </div>
+    </div>
+</div>
+<br/><br/>
 {% endblock main-content %}
