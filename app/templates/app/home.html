@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title%}
+
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'app/images/banner/b1.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+   <div class="carousel-item">
+      <img src="{% static 'app/images/banner/b2.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'app/images/banner/b3.jpeg' %}" class="d-block w-100" alt="banner image">
+    </div>
+  </div>
+</div>
+  {% endblock banner-slider %}
+   {% block information %}
+  <div class="container">
+    <div class="row bg-primary text-center p-5 text-white border-bottom shadow">
+        <h1>Products</h1>
+        <p class="fs-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum diam turpis, nec rutrum justo luctus sit amet. Ut accumsan nisi ut sollicitudin rhoncus. Nulla imperdiet dui eu dui ullamcorper, eu maximus mauris bibendum. Vivamus orci felis, blandit eu tempus sit amet, venenatis eu diam. Etiam ultrices sollicitudin porttitor. Suspendisse mauris leo, efficitur in ipsum sit amet, lacinia tempus augue. Nulla in quam eu quam ultricies vulputate sed quis lectus.
+
+            Maecenas sed porttitor neque. Nunc vel leo rutrum, hendrerit nisi quis, suscipit urna. In hac habitasse platea dictumst. Nunc a lobortis felis. Aenean a nunc accumsan, efficitur enim eget, elementum nisi. Aliquam sit amet varius nibh. Duis convallis ex in magna ornare rutrum. Etiam sed ligula orci. Duis finibus dignissim cursus.
+        </p>
+    </div>
+  </div>
+{% endblock information %}
+{% block main-content %}
+<h1>Welcome to our Ecommerce site......</h1>
+{% endblock main-content %}
